@@ -134,10 +134,7 @@ you can use this code:)
 <!-- CONTACT -->
 ## Contact
 
-Parham Karbasi - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
+Parham Karbasi - telegram : (@https://telegram.me/whoishere12) - @whoishere12
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
