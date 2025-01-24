@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static '/Login/style.css' %}">
+	<title>Login</title>
+</head>
+<body>
+
+
+	<div class="square">
+		<i style="--clr:#540169;"></i>
+		<i style="--clr:#1845ad;"></i>
+		<i style="--clr:#23a2f6;"></i>
+		<div class="login">
+			<h2>ورود</h2>
+			<div style="color:white" >
+				{% if messages %}
+				<ul class="messages">
+					{% for message in messages %}
+						
+					<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+				
+					{% endfor %}
+					</div>
+				</ul>
+				{% endif %}
+				<div>
+	
+			 <form method ='POST' action=''>
+				{% csrf_token %}
+			<div class="inputBx">
+				<input name='username' type="text" placeholder="نام کاربری را وارد کنید">
+			</div>
+			<br>
+			<div class="inputBx">
+				<input name='password' type="password" placeholder="رمز عبور را وارد کنید">
+			</div>
+			<br>
+			<div class="inputBx">
+				<input type="submit" value="تایید">
+			</div>
+			<div class="links">
+				{% comment %} <a href="{% url 'passwordforget' %}">رمز خود را فراموش کرده اید؟</a> {% endcomment %}
+				<a href="{% url 'home' %}">خانه</a>
+		 
+			</form><br>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

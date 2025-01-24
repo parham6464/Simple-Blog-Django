@@ -1,0 +1,154 @@
+@font-face
+{
+  font-family: vazir;
+  src: url(./Vazirmatn-ExtraBold.woff2);
+}
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: vazir;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+    background: #050913;
+	direction: rtl;
+	height: 100%;
+	overflow-y: hidden;
+}
+.square {
+	position: relative;
+	width: 650px;
+	height: 650px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.square i {
+	position: absolute;
+	inset: 0;
+	border: 2px solid #e1e1e1;
+	transition: 0.5s;
+}
+.square i:nth-child(1) {
+	border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+	animation: animate 6s linear infinite;
+}
+.square i:nth-child(2) {
+	border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+	animation: animate 4s linear infinite;
+}
+.square i:nth-child(3) {
+	border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+	animation: animate2 10s linear infinite;
+}
+.square:hover i {
+	border: 6px solid var(--clr);
+	filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+@keyframes animate2 {
+	0%
+	{
+		transform: rotate(360deg);
+	}
+	100%
+	{
+		transform: rotate(0deg);
+	}
+}
+.login {
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+.login h2 {
+	font-size: 2em;
+	color: #e1e1e1;
+}
+.login .inputBx {
+	position: relative;
+	width: 100%;
+}
+.login .inputBx input {
+	position: relative;
+	width: 100%;
+	padding: 12px 20px;
+	background: transparent;
+	border: 2px solid #e1e1e1;
+	border-radius: 40px;
+	font-size: 1.2em;
+	color: #e1e1e1;
+	box-shadow: none;
+	outline: none;
+}
+.login .inputBx input:hover {
+	border: 2px solid #9BBEC8;
+	border-radius: 40px;
+	box-shadow: none;
+	outline: none;
+}
+.login .inputBx input[type="submit"] {
+	font-family: vazir;
+	width: 100%;
+	background: #6600FF;
+	border: none;
+	cursor: pointer;
+}
+.login .inputBx input[type="submit"]:hover {
+	width: 100%;
+	background: #5700D9;
+	border: none;
+	cursor: pointer;
+}
+.login .inputBx input::placeholder {
+	color: rgba(255,255,255,0.75);
+}
+.login .links {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+.login .links a {
+	color: #e1e1e1;
+	text-decoration: none;
+}
+
+.login .links a:hover{
+	color: #23a2f6;
+	text-decoration: none;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background: #1A2329; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+	background: #23a2f6;
+	border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background: #1845ad; 
+  }

@@ -1,0 +1,116 @@
+@font-face
+{
+  font-family: AOrdibehesht;
+  src: url(./AOrdibeheshtShablon.TTF);
+}
+body {
+  background-color: #050913;
+  font-family: 'Roboto', sans-serif;
+  
+}
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: #e1e1e1;
+  font-weight: 700;
+}
+.message-box h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 72px;
+  line-height: 60px;
+  margin-bottom: 40px;
+  color: transparent;
+  background-image: linear-gradient(to right, #1845ad, #8c14fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.message-box p {
+  font-family: AOrdibehesht;
+  margin-bottom: 40px;
+  font-size: 32px;
+  
+  font-weight: 400;
+  margin-top: 10px;
+}
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+.buttons-con .action-link-wrap a {
+  background: #6600FF;
+  outline: 0;
+  border: 1px solid #6600FF;
+  border-radius: 10px;
+	border: none;
+  font-size: 20px;
+  padding: 8px 25px;
+  max-width: 100%;
+  min-width: 140px;
+  color: #e1e1e1;
+  text-decoration: none;
+  margin-right: 10px
+}
+.buttons-con .action-link-wrap a:hover {
+  background: #5700D9;
+}
+
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+  -webkit-animation: float 1s infinite ease-in-out alternate;
+          animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s; 
+}
+#Polygon-3 {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s; 
+}
+#Polygon-4 {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s; 
+}
+#Polygon-5 {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s; 
+}
+
+@-webkit-keyframes float {
+	100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes float {
+	100% {
+    transform: translateY(20px);
+  }
+}
+@media (max-width: 450px) {
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -190px;
+  }
+  .message-box {
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center;
+  }
+}

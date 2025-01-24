@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static '/Login/style.css' %}">
+	<title>Log Out</title>
+</head>
+<body>
+	{% include "messages.html" %}
+
+
+	<div class="square">
+		<i style="--clr:#540169;"></i>
+		<i style="--clr:#1845ad;"></i>
+		<i style="--clr:#23a2f6;"></i>
+		<div class="login">
+			<h2>خروج</h2>
+			 <form method ='POST' action=''>
+				{% csrf_token %}
+			<div class="inputBx">
+				<input type="submit" value="بله می خواهم خارج شوم">
+			</div>
+			</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
