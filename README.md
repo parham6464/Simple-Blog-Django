@@ -24,7 +24,7 @@
   <p align="center">
     this is a blog website that i only coded back-end with django
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/parham6464/Simple-Blog-Django"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
