@@ -134,7 +134,7 @@ you can use this code:)
 <!-- CONTACT -->
 ## Contact
 
-Parham Karbasi - telegram : (@https://telegram.me/whoishere12) - @whoishere12
+Parham Karbasi - telegram : (https://telegram.me/whoishere12) - @whoishere12
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
